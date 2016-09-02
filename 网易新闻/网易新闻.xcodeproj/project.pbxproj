@@ -13,6 +13,9 @@
 		04573C091D782894002EB96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04573C081D782894002EB96A /* Assets.xcassets */; };
 		04573C0C1D782894002EB96A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04573C0A1D782894002EB96A /* LaunchScreen.storyboard */; };
 		048134151D782EB100773405 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048134141D782EB100773405 /* HomeViewController.m */; };
+		049D12271D79D38500EB54E7 /* ChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D12241D79D38500EB54E7 /* ChannelLabel.m */; };
+		049D12281D79D38500EB54E7 /* ChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D12261D79D38500EB54E7 /* ChannelModel.m */; };
+		049D122D1D79D52C00EB54E7 /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 049D122C1D79D52C00EB54E7 /* topic_news.json */; };
 		8C4D1A93714E5D1C55B0750F /* libPods-网易新闻.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7628153C5212F2B822CBFCE0 /* libPods-网易新闻.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,11 @@
 		0481340E1D782CDF00773405 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		048134131D782EB100773405 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		048134141D782EB100773405 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		049D12231D79D38500EB54E7 /* ChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelLabel.h; sourceTree = "<group>"; };
+		049D12241D79D38500EB54E7 /* ChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelLabel.m; sourceTree = "<group>"; };
+		049D12251D79D38500EB54E7 /* ChannelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelModel.h; sourceTree = "<group>"; };
+		049D12261D79D38500EB54E7 /* ChannelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelModel.m; sourceTree = "<group>"; };
+		049D122C1D79D52C00EB54E7 /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
 		7628153C5212F2B822CBFCE0 /* libPods-网易新闻.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-网易新闻.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC10943594B2D93AF3758CCA /* Pods-网易新闻.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-网易新闻.debug.xcconfig"; path = "Pods/Target Support Files/Pods-网易新闻/Pods-网易新闻.debug.xcconfig"; sourceTree = "<group>"; };
 		EC84ABC613F4AB2C78EB7D45 /* Pods-网易新闻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-网易新闻.release.xcconfig"; path = "Pods/Target Support Files/Pods-网易新闻/Pods-网易新闻.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,12 +74,14 @@
 		04573BFB1D782894002EB96A /* 网易新闻 */ = {
 			isa = PBXGroup;
 			children = (
+				049D12291D79D3AB00EB54E7 /* Channel */,
 				0481340F1D782E0200773405 /* hom[首页] */,
 				04573BFF1D782894002EB96A /* AppDelegate.h */,
 				04573C001D782894002EB96A /* AppDelegate.m */,
 				04573C051D782894002EB96A /* Main.storyboard */,
 				04573C081D782894002EB96A /* Assets.xcassets */,
 				04573C0A1D782894002EB96A /* LaunchScreen.storyboard */,
+				049D122C1D79D52C00EB54E7 /* topic_news.json */,
 				04573C0D1D782894002EB96A /* Info.plist */,
 				04573BFC1D782894002EB96A /* Supporting Files */,
 				0481340E1D782CDF00773405 /* PrefixHeader.pch */,
@@ -118,6 +128,33 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		049D12291D79D3AB00EB54E7 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				049D122B1D79D3DD00EB54E7 /* view */,
+				049D122A1D79D3BE00EB54E7 /* Model */,
+			);
+			name = Channel;
+			sourceTree = "<group>";
+		};
+		049D122A1D79D3BE00EB54E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				049D12251D79D38500EB54E7 /* ChannelModel.h */,
+				049D12261D79D38500EB54E7 /* ChannelModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		049D122B1D79D3DD00EB54E7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				049D12241D79D38500EB54E7 /* ChannelLabel.m */,
+				049D12231D79D38500EB54E7 /* ChannelLabel.h */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 		2D7A11DAE3FF05D5A18B1B3F /* Frameworks */ = {
@@ -199,6 +236,7 @@
 			files = (
 				04573C0C1D782894002EB96A /* LaunchScreen.storyboard in Resources */,
 				04573C091D782894002EB96A /* Assets.xcassets in Resources */,
+				049D122D1D79D52C00EB54E7 /* topic_news.json in Resources */,
 				04573C071D782894002EB96A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +298,9 @@
 			files = (
 				04573C011D782894002EB96A /* AppDelegate.m in Sources */,
 				04573BFE1D782894002EB96A /* main.m in Sources */,
+				049D12271D79D38500EB54E7 /* ChannelLabel.m in Sources */,
 				048134151D782EB100773405 /* HomeViewController.m in Sources */,
+				049D12281D79D38500EB54E7 /* ChannelModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
