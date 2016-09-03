@@ -18,6 +18,7 @@
 		049D12301D79D75E00EB54E7 /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D122F1D79D75E00EB54E7 /* HomeCollectionViewCell.m */; };
 		049D12361D79D84700EB54E7 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D12351D79D84700EB54E7 /* NewsTableViewController.m */; };
 		04A1C57B1D7ABC8E009DE491 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A1C57A1D7ABC8E009DE491 /* HomeViewController.m */; };
+		04A1C57D1D7AC38D009DE491 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A1C57C1D7AC38D009DE491 /* News.storyboard */; };
 		8C4D1A93714E5D1C55B0750F /* libPods-网易新闻.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7628153C5212F2B822CBFCE0 /* libPods-网易新闻.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		049D12351D79D84700EB54E7 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
 		04A1C5791D7ABC8E009DE491 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		04A1C57A1D7ABC8E009DE491 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		04A1C57C1D7AC38D009DE491 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		7628153C5212F2B822CBFCE0 /* libPods-网易新闻.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-网易新闻.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC10943594B2D93AF3758CCA /* Pods-网易新闻.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-网易新闻.debug.xcconfig"; path = "Pods/Target Support Files/Pods-网易新闻/Pods-网易新闻.debug.xcconfig"; sourceTree = "<group>"; };
 		EC84ABC613F4AB2C78EB7D45 /* Pods-网易新闻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-网易新闻.release.xcconfig"; path = "Pods/Target Support Files/Pods-网易新闻/Pods-网易新闻.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				049D12341D79D84700EB54E7 /* NewsTableViewController.h */,
 				049D12351D79D84700EB54E7 /* NewsTableViewController.m */,
+				04A1C57C1D7AC38D009DE491 /* News.storyboard */,
 			);
 			name = News;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			files = (
 				04573C0C1D782894002EB96A /* LaunchScreen.storyboard in Resources */,
 				04573C091D782894002EB96A /* Assets.xcassets in Resources */,
+				04A1C57D1D7AC38D009DE491 /* News.storyboard in Resources */,
 				049D122D1D79D52C00EB54E7 /* topic_news.json in Resources */,
 				04573C071D782894002EB96A /* Main.storyboard in Resources */,
 			);

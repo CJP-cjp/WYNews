@@ -9,7 +9,7 @@
 #import "HomeViewController.h"
 #import "ChannelModel.h"
 #import "ChannelLabel.h"
-//#import "HomeCollectionViewCell.h"
+#import "HomeCollectionViewCell.h"
 @interface HomeViewController ()<UICollectionViewDataSource>
 @property(nonatomic,strong)NSArray *channelArray;
 @property (weak, nonatomic) IBOutlet UICollectionView *newsCollectionView;
@@ -85,22 +85,22 @@
     return _channelArray.count;
 }
 
-//-(UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    HomeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellID" forIndexPath:indexPath];
-//    //取出频道标签对应的模型
-//    ChannelModel *model = _channelArray[indexPath.item];
-//    NSString *URLString = [NSString stringWithFormat:@"article/headline/%@/0-20.html",model.tid];
-//    cell.URLString = URLString;
-//    //    cell.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0  blue:arc4random_uniform(256)/255.0 alpha:1];
-//    
-//    return cell;
-//}
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+-(UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellID" forIndexPath:indexPath];
-     cell.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0  blue:arc4random_uniform(256)/255.0 alpha:1];
+    HomeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellID" forIndexPath:indexPath];
+    //取出频道标签对应的模型
+    ChannelModel *model = _channelArray[indexPath.item];
+    NSString *URLString = [NSString stringWithFormat:@"article/headline/%@/0-20.html",model.tid];
+    cell.URLString = URLString;
+    //    cell.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0  blue:arc4random_uniform(256)/255.0 alpha:1];
+    
     return cell;
 }
+//-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellID" forIndexPath:indexPath];
+//     cell.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0  blue:arc4random_uniform(256)/255.0 alpha:1];
+//    return cell;
+//}
 
 @end
